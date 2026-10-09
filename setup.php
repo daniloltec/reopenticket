@@ -15,7 +15,7 @@ function plugin_version_reopenticket()
     return [
         'name'         => 'Reopen Ticket',
         'version'      => PLUGIN_REOPENTICKET_VERSION,
-        'author'       => 'Reopen Ticket',
+        'author'       => 'daniloltec',
         'license'      => 'GPLv2+',
         'homepage'     => '',
         'requirements' => [
