@@ -1,0 +1,35 @@
+<div class="card mb-3" id="reopenticket-banner">
+    <div class="card-body d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <div>
+            <strong>Reabrir chamado</strong>
+            <div class="text-muted">Este chamado está {{ status_label }}. Informe o motivo para voltar ao atendimento.</div>
+        </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reopenticket-modal">
+            <i class="ti ti-refresh"></i>
+            Reabrir chamado
+        </button>
+    </div>
+</div>
+
+<div class="modal fade" id="reopenticket-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" action="{{ form_url }}">
+                <div class="modal-header">
+                    <h5 class="modal-title">Reabrir chamado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="tickets_id" value="{{ tickets_id }}">
+                    <input type="hidden" name="_glpi_csrf_token" value="{{ csrf_token }}">
+                    <label class="form-label" for="reopenticket-reason">Motivo</label>
+                    <textarea class="form-control" name="reason" id="reopenticket-reason" rows="4" {% if require_reason %}required{% endif %}></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" name="reopen" value="1" class="btn btn-primary">Reabrir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
