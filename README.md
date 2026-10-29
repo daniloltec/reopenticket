@@ -10,6 +10,7 @@ Coloca o botão **Reabrir chamado** na tela do ticket quando ele está **solucio
 - Grava um acompanhamento público com o motivo.
 - Recusa a solução pendente e remove a pesquisa de satisfação, pelo fluxo normal do GLPI.
 - O solicitante do chamado pode reabrir o próprio ticket. Quem tem o direito do plugin reabre qualquer chamado que consiga ver.
+- 
 
 ## Estrutura
 
