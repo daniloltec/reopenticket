@@ -1,4 +1,4 @@
-# Reopen Ticket (Plugin GLPI 11)
+# Reabertura de Ticket (Plugin GLPI 11)
 
 Coloca o botão **Reabrir chamado** na tela do ticket quando ele está **solucionado** ou **fechado**. O usuário informa o motivo, o chamado volta para atendimento e o motivo entra no histórico.
 
